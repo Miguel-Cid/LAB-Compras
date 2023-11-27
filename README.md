@@ -26,7 +26,7 @@ dni,supermercado,provincia,fecha_llegada,fecha_salida,total_compra
 55993608Q,Lidl,Sevilla,01/01/2019 20:09,01/01/2019 20:19,43.09
 ```
 
-El objetivo del ejercicio es leer estos datos, realizar distintas operaciones con ellos e implementar los test que permitan probarlas. Cada operación se implementará en una función distinta. Se pide implementar las siguientes funciones y sus test correspondientes usando la `namedtuple` **Compra** que se define a continuación. Tenga en cuenta que se pueden definir funciones auxiliares cuando se considere necesario y que tiene que usar typing para definir las cabeceras de las funciones que implemente:
+El objetivo del ejercicio es leer estos datos, realizar distintas operaciones con ellos e implementar los test que permitan probarlas. Cada operación se implementará en una función distinta. Se pide implementar las siguientes funciones y sus test correspondientes usando la `NamedTuple` **Compra** que se define a continuación. Tenga en cuenta que se pueden definir funciones auxiliares cuando se considere necesario y que tiene que usar typing para definir las cabeceras de las funciones que implemente:
 
 ```python
 Compra = NamedTuple('Compra',
