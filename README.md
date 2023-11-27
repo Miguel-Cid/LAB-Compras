@@ -26,7 +26,18 @@ dni,supermercado,provincia,fecha_llegada,fecha_salida,total_compra
 55993608Q,Lidl,Sevilla,01/01/2019 20:09,01/01/2019 20:19,43.09
 ```
 
-El objetivo del ejercicio es leer estos datos, realizar distintas operaciones con ellos e implementar los test que permitan probarlas. Cada operación se implementará en una función distinta. Se pide implementar las siguientes funciones y sus test correspondientes, teniendo en cuenta que se pueden definir funciones auxiliares cuando se considere necesario:
+El objetivo del ejercicio es leer estos datos, realizar distintas operaciones con ellos e implementar los test que permitan probarlas. Cada operación se implementará en una función distinta. Se pide implementar las siguientes funciones y sus test correspondientes usando la `namedtuple` **Compra** que se define a continuación. Tenga en cuenta que se pueden definir funciones auxiliares cuando se considere necesario y que tiene que usar typing para definir las cabeceras de las funciones que implemente:
+
+```python
+Compra = NamedTuple('Compra',
+                    [('dni', str),
+                     ('supermercado', str),
+                     ('provincia', str),
+                     ('fecha_llegada', datetime.datetime),
+                     ('fecha_salida', str),
+                     ('total_compra', float)]
+                    )
+```
 
 1.	**lee_compras** : recibe el nombre de un fichero y devuelve una lista de tuplas de tipo Compra conteniendo todos los datos almacenados en el fichero. _(1 punto)_
 2.	**compra_maxima_minima_provincia**: recibe una lista de tuplas de tipo `Compra` y una provincia. Devuelve una tupla que contiene el importe máximo y el mínimo de las compras que se han realizado en la provincia dada como parámetro. Si la provincia toma el valor `None`, se devuelve una tupla con el importe máximo y el mínimo calculados a partir de todas las compras. _(1 punto)_
