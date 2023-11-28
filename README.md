@@ -13,7 +13,7 @@ Este proyecto es una adaptación del primer parcial del curso 2020/21.
     * **compras_test.py**: Contiene funciones de test para probar las funciones del módulo `compras.py`. En este módulo está el main.
     * **parsers.py**: Contiene funciones de conversión de tipos.
 * **/data**: Contiene el dataset o datasets del proyecto
-    * **compras.csv**: Archivo con los datos de extranjeros residentes en Sevilla.
+    * **compras.csv**: Archivo con los datos de compras.
 
 ## Ejercicios a realizar
 
