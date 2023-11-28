@@ -33,7 +33,7 @@ Compra = NamedTuple('Compra',
                     [('dni', str),
                      ('supermercado', str),
                      ('provincia', str),
-                     ('fecha_llegada', datetime.datetime),
+                     ('fecha_llegada', datetime),
                      ('fecha_salida', str),
                      ('total_compra', float)]
                     )
@@ -54,7 +54,8 @@ Tres primeros registros: [Compra(dni='62745110Y', supermercado='Carrefour', prov
 Tres últimos registros: [Compra(dni='89803474C', supermercado='Dia', provincia='Malaga', fecha_llegada=datetime.datetime(2019, 12, 30, 21, 8), fecha_salida=datetime.datetime(2019, 12, 30, 21, 26), total_compra=41.58), Compra(dni='06286245T', supermercado='Aldi', provincia='Sevilla', fecha_llegada=datetime.datetime(2019, 12, 30, 21, 50), fecha_salida=datetime.datetime(2019, 12, 30, 22, 30), total_compra=180.92)]
 
 EJERCICIO 2
-Importe máximo de la provincia de Huelva: 199.92. Importe mínimo: 1.28
+Importe máximo de la provincia de Huelva : 199.92 . Importe mínimo: 1.28
+Importe máximo de la provincia de None : 199.99 . Importe mínimo: 1.2
 
 EJERCICIO 3
 La hora con menos afluencia es: 21 h. con 83 llegadas de clientes
