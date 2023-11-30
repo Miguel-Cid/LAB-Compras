@@ -34,7 +34,7 @@ Compra = NamedTuple('Compra',
                      ('supermercado', str),
                      ('provincia', str),
                      ('fecha_llegada', datetime),
-                     ('fecha_salida', dateime),
+                     ('fecha_salida', datetime),
                      ('total_compra', float)]
                     )
 ```
